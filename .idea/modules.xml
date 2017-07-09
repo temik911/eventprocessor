@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/console/console.iml" filepath="$PROJECT_DIR$/console/console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-processor-service/event-processor-service.iml" filepath="$PROJECT_DIR$/event-processor-service/event-processor-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/event-processor-service-api/event-processor-service-api.iml" filepath="$PROJECT_DIR$/event-processor-service-api/event-processor-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eventprocessor.iml" filepath="$PROJECT_DIR$/eventprocessor.iml" />
+    </modules>
+  </component>
+</project>

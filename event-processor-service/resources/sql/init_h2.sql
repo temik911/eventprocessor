@@ -1,0 +1,6 @@
+CREATE TABLE EVENTS (
+  id        BIGINT NOT NULL AUTO_INCREMENT,
+  eventTime BIGINT,
+  PRIMARY KEY (id)
+);
+CREATE INDEX eventTime_idx on EVENTS (eventTime);
