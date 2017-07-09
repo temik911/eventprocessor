@@ -13,13 +13,12 @@ import java.util.Collection;
  * @since 08.07.2017.
  */
 public class EventsDao {
-    private static final String INSERT_STATEMENT = "INSERT INTO events (eventTime) values (?)";
+    private static final String INSERT_STATEMENT = "INSERT INTO events (eventTime) VALUES (?)";
     private static final String SELECT_STATEMENT = "SELECT COUNT(*) FROM events WHERE eventTime BETWEEN ? AND ?";
 
     public void insert(Collection<Event> toCreate) throws SQLException {
         try (Connection connection = DbConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_STATEMENT, Statement.NO_GENERATED_KEYS))
-        {
+             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_STATEMENT, Statement.NO_GENERATED_KEYS)) {
             toCreate.forEach(event -> {
                 try {
                     preparedStatement.setLong(1, event.getTimestamp());
@@ -35,8 +34,7 @@ public class EventsDao {
 
     public int getCount(long fromTime, long toTime) throws SQLException {
         try (Connection connection = DbConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_STATEMENT, Statement.NO_GENERATED_KEYS))
-        {
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_STATEMENT, Statement.NO_GENERATED_KEYS)) {
             preparedStatement.setLong(1, fromTime);
             preparedStatement.setLong(2, toTime);
             ResultSet resultSet = preparedStatement.executeQuery();

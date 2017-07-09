@@ -1,7 +1,5 @@
 package com.eventprocessor.utils;
 
-import java.rmi.RemoteException;
-
 import static org.junit.Assert.fail;
 
 /**

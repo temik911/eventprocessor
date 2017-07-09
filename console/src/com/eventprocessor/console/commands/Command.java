@@ -15,5 +15,6 @@ public abstract class Command {
     }
 
     protected abstract void executeImpl(String[] args) throws Exception;
+
     public abstract String getUsage();
 }

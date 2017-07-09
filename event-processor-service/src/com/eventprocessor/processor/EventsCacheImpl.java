@@ -24,7 +24,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * Cache implementation. Always contains events for timestamps from
  * (the newest event timestamp - {@link #CACHE_TIME_RANGE} value) to (the newest event timestamp).
  *
- *
  * @author Artem
  * @since 08.07.2017.
  */

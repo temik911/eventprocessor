@@ -1,8 +1,5 @@
 package com.eventprocessor.utils;
 
-import com.eventprocessor.utils.DbConnection;
-import com.eventprocessor.utils.Launcher;
-
 import java.io.FileNotFoundException;
 import java.sql.Connection;
 import java.sql.SQLException;

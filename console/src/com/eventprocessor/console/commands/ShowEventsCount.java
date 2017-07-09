@@ -4,11 +4,6 @@ import com.eventprocessor.service.EventService;
 import com.eventprocessor.service.EventsCountRequest;
 import com.eventprocessor.service.EventsCountResponse;
 
-import java.net.MalformedURLException;
-import java.rmi.Naming;
-import java.rmi.NotBoundException;
-import java.rmi.RemoteException;
-
 /**
  * @author Artem
  * @since 09.07.2017.

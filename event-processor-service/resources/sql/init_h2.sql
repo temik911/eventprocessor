@@ -3,4 +3,5 @@ CREATE TABLE EVENTS (
   eventTime BIGINT,
   PRIMARY KEY (id)
 );
-CREATE INDEX eventTime_idx on EVENTS (eventTime);
+CREATE INDEX eventTime_idx
+  ON EVENTS (eventTime);

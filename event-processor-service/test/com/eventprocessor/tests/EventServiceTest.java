@@ -2,17 +2,8 @@ package com.eventprocessor.tests;
 
 import com.eventprocessor.api.Event;
 import com.eventprocessor.processor.EventServiceImpl;
-import com.eventprocessor.processor.EventsCacheImpl;
-import com.eventprocessor.processor.EventsDao;
-import com.eventprocessor.processor.interfaces.EventsCache;
-import com.eventprocessor.processor.interfaces.LocalEventService;
 import com.eventprocessor.service.EventsCountRequest;
-import com.eventprocessor.utils.DbCreator;
-import com.eventprocessor.utils.TestablePropertiesProvider;
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 
 import java.util.Arrays;
 import java.util.List;
